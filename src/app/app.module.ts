@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DropdownModule } from 'primeng/dropdown';
 import { TooltipModule } from 'primeng/tooltip';
-
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,8 @@ import { TooltipModule } from 'primeng/tooltip';
     FormsModule,
     HttpClientModule,
     DropdownModule,
-    TooltipModule
+    TooltipModule,
+    ConfirmDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
