@@ -8,11 +8,15 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DropdownModule } from 'primeng/dropdown';
 import { TooltipModule } from 'primeng/tooltip';
-import { ConfirmDialogModule } from 'primeng/confirmdialog';
+import { AppDescriptionComponent } from './app-description/app-description.component';
+import { FridgeListComponent } from './fridge-list/fridge-list.component';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AppDescriptionComponent,
+    FridgeListComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +27,7 @@ import { ConfirmDialogModule } from 'primeng/confirmdialog';
     HttpClientModule,
     DropdownModule,
     TooltipModule,
-    ConfirmDialogModule
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
