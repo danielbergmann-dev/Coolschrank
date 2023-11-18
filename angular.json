@@ -78,7 +78,10 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
+          "options": {
+            "proxyConfig": "proxy.conf.json"
+          },
+             "configurations": {
             "production": {
               "browserTarget": "Coolschrank:build:production"
             },
@@ -115,5 +118,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "0f3d6f67-2bbb-46b5-b05a-5dfd013e4ac4"
   }
 }

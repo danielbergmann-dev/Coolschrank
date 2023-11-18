@@ -4,6 +4,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { tap } from 'rxjs';
 
 
+
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -71,7 +74,8 @@ export class AppComponent {
 
   getFridge(id: string) {
     const headers = new HttpHeaders({ 'Authorization': this.basicAuthHeader });
-    return this.httpClient.get(`${this.API_SERVER}/fridge/${id}`, { headers });
+    return this.httpClient.get(`/api/build/rola/coolschrank/ongoing/application/fridge/${id}`, { headers });
+
   }
 
   createFridge() {

@@ -1,0 +1,11 @@
+{
+    "/api": {
+      "target": "https://innovations.rola.de",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+  }
+  
